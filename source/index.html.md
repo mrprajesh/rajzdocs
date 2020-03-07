@@ -1,5 +1,5 @@
 ---
-title: My Experiments with Computers
+title: Rajesh's Experiments with Code
 
 language_tabs: # must be one of https://git.io/vQNgJ
 
@@ -11,7 +11,6 @@ toc_footers:
 
 includes:
 - intro
-- errors
 
 search: true
 ---
