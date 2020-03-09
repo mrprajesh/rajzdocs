@@ -1,5 +1,5 @@
 ---
-title: Rajesh's Experiments with Code
+title: Rajesh's Cheatsheet
 
 language_tabs: # must be one of https://git.io/vQNgJ
 
@@ -10,7 +10,13 @@ toc_footers:
 
 
 includes:
-- intro
+- main
+- linux_basic
+- linux_advanced
+- c
+- cpp
+- git
+- github
 
 search: true
 ---
