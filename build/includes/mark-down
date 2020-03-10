@@ -142,7 +142,7 @@ hyphens or underscores like the below.
 
 ---
 
-Also, have a blank line before and after.
+Also, have a blank line before and after!
 
 ___
 </code></pre>
@@ -155,7 +155,7 @@ asterisks,</p>
 
 <hr>
 
-<p>Also, have a blank line before and after.</p>
+<p>Also, have a blank line before and after!</p>
 
 <hr>
 <h2 id='table'>Table</h2><pre class="highlight plaintext"><code>Header 1 | Header 2
