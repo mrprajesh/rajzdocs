@@ -11,8 +11,17 @@ To develop and run locally
 $ bundle install
 $ bundle exec middleman server
 ```
+
 Check the page [http://localhost:4567/](http://localhost:4567/)
 
+### Debug
+
+You may use these below commands to debug when the `css` failed to load.
+
+```
+bundle exec middleman build --verbose
+bundle exec middleman build
+```
 ## Source
 The main file is index.html.md inside `source` folder.
 In index file one can include other `.md` files directly.
