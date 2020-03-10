@@ -156,7 +156,7 @@ hyphens or underscores like the below.
 
 ---
 
-Also, have a blank line before and after.
+Also, have a blank line before and after!
 
 ___
 ```
@@ -170,7 +170,7 @@ hyphens or underscores like the below.
 
 ---
 
-Also, have a blank line before and after.
+Also, have a blank line before and after!
 
 ___
 

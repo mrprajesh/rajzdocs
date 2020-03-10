@@ -13,12 +13,8 @@ includes:
 - header
 - linux-basic
 - linux-advanced
-- my-markdown
-- c
-- cpp
-- git
-- github
-- footer
+- mark-down
+
 
 search: true
 ---
