@@ -10,13 +10,15 @@ toc_footers:
 
 
 includes:
-- main
-- linux_basic
-- linux_advanced
+- header
+- linux-basic
+- linux-advanced
+- my-markdown
 - c
 - cpp
 - git
 - github
+- footer
 
 search: true
 ---
