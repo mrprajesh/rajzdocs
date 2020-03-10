@@ -1,0 +1,50 @@
+<h1 id='linux-administration'>Linux Administration</h1>
+<p>The easiest of all Linux distribution is Ubuntu.
+I have been using Linux along side from 2009,
+and from 2016 Linux is my main stream operating system.
+I have used Debian, Ubuntu, Fedora, OpenSUSE, and a few others.
+Thanks to my under-graduate projects and {TCE&#39;s FStival 2008]().
+But, now Linux Mint Cinnamon is my favourite (from 2017).
+I begin to dislike Unity-Gnome in Ubuntu, so moved to Mint.
+Am I ranting or self-trumpeting? Both. Okay, it is 2020. But still some
+commands are still in my muscle memory. I am just logging it here.</p>
+<h2 id='admin-commands'>Admin commands</h2>
+<ul>
+<li><code>echo $HOME</code> - Displays the home of user who run it</li>
+<li><p><code>ls -a</code> - Also list the hidden folders/files (it beging with a <code>.</code>) e.g <code>.bashrc</code> in $HOME</p></li>
+<li><p><code>df -h</code>   - List all mounted partition along with used/available/% size</p></li>
+<li><p><code>top</code>       - List all running process based on % of CPU usage. press <code>q</code> to close</p></li>
+<li><p><code>du -h .</code> - List the file/folder size of current directory</p></li>
+<li><p><code>lscpu</code> - List the processor details</p></li>
+<li><p><code>lsusb</code> - List of devices attached to the USB port</p></li>
+<li><p><code>cat /proc/meminfo</code>    - List the RAM/memory details</p></li>
+<li><p><code>dmesg | grep tty</code>      - Find the <code>tty/devName</code> just attached via USB</p></li>
+<li><p><code>less /var/log/auth.log</code>- All login/out/suspend session are recored</p></li>
+<li><p><code>/var/log/*</code>            - has all the logs file e.g. apt-get log is in `<code>/var/log/apt/history.log</code></p></li>
+<li><p><code>ps -ef | grep firefox</code>- List processes/id with the name <code>firefox</code></p></li>
+<li><p><code>kill &lt;pid&gt;</code>    - Kill the process with <pid> sending sigterminate</p></li>
+<li><p><code>kill -9 &lt;pid&gt;</code> - Kill the process with <pid> sending sigkill</p></li>
+<li><p><code>/home/&lt;user&gt;/.bashrc</code>  - User specific bashrc file</p></li>
+<li><p><code>source .bashrc</code>- Run and set bachrc file in current session</p></li>
+<li><p><code>/home/&lt;user&gt;/.bash_history</code> - List of cmd typed by the <code>user</code></p></li>
+<li><p><code>echo $PATH</code> - Displays the environment variable <code>PATH</code></p></li>
+<li><p><code>PATH=$PATH:/usr/local/cuda-10.0/bin</code> - Set path in shell</p></li>
+<li><p><code>export PATH</code> - will pass this env variable for subsequent commands <a href="https://github.com/edemaine/coauthor/issues/421#issuecomment-515698521">eric</a></p></li>
+<li><p><code>ssh  username@ip-address</code> # e.g <code>ssh rajesh@10.6.3.112</code></p></li>
+<li><p><code>scp localfile user@ip-address:/some/location/on/server</code></p></li>
+</ul>
+<h2 id='installation'>Installation</h2>
+<ul>
+<li>Most of new machine. You may have to disable fastboot/safeboot in BIOS</li>
+<li>Download you favourite linux as <code>iso</code> file</li>
+<li>Burn iso to formatted USB/DVD using
+<a href="https://rufus.ie/" title="USB Rufus">rufus</a>,
+<a href="https://unetbootin.github.io/" title="UNetbootin">UNetbootin</a> ,
+<a href="https://askubuntu.com/a/1153429/1021108" title="USB Creator">usb-creator</a> or
+<a href="https://www.howtogeek.com/414574/how-to-burn-an-iso-file-to-a-usb-drive-in-linux/" title="Startup Disk Creator">Startup Disk creator</a></li>
+<li>Reboot and press the key F12/F10 (differ based on manufacturer) to bootfrom USB/DVD</li>
+<li>Mostly positive answer for moast. At select drive location, use MANUALLY</li>
+<li>Give appropriate drives  &quot;/&quot;, /home, and swap (/boot, /tmp optinal)</li>
+<li>You may leave it with / alone also.</li>
+<li>Upon installation and reboot. Grub will appear.</li>
+</ul>

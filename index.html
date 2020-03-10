@@ -222,7 +222,7 @@
             <a href="#linux-basic" class="toc-h1 toc-link" data-title="Linux Basic">Linux Basic</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#shortcut-keys" class="toc-h2 toc-link" data-title="Shortcut keys">Shortcut keys</a>
+                    <a href="#a-few-shortcuts" class="toc-h2 toc-link" data-title="A few shortcuts">A few shortcuts</a>
                   </li>
                   <li>
                     <a href="#basic-commands" class="toc-h2 toc-link" data-title="Basic commands">Basic commands</a>
@@ -233,7 +233,45 @@
             <a href="#linux-administration" class="toc-h1 toc-link" data-title="Linux Administration">Linux Administration</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#install" class="toc-h2 toc-link" data-title="Install">Install</a>
+                    <a href="#admin-commands" class="toc-h2 toc-link" data-title="Admin commands">Admin commands</a>
+                  </li>
+                  <li>
+                    <a href="#installation" class="toc-h2 toc-link" data-title="Installation">Installation</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#markdown-syntax" class="toc-h1 toc-link" data-title="Markdown Syntax">Markdown Syntax</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#heading" class="toc-h2 toc-link" data-title="Heading">Heading</a>
+                  </li>
+                  <li>
+                    <a href="#quoting-text" class="toc-h2 toc-link" data-title="Quoting text">Quoting text</a>
+                  </li>
+                  <li>
+                    <a href="#source-code" class="toc-h2 toc-link" data-title="Source code">Source code</a>
+                  </li>
+                  <li>
+                    <a href="#hyperlinks-attachments" class="toc-h2 toc-link" data-title="Hyperlinks/Attachments">Hyperlinks/Attachments</a>
+                  </li>
+                  <li>
+                    <a href="#text-formatting" class="toc-h2 toc-link" data-title="Text formatting">Text formatting</a>
+                  </li>
+                  <li>
+                    <a href="#list" class="toc-h2 toc-link" data-title="List">List</a>
+                  </li>
+                  <li>
+                    <a href="#horizontal-rule" class="toc-h2 toc-link" data-title="Horizontal rule">Horizontal rule</a>
+                  </li>
+                  <li>
+                    <a href="#table" class="toc-h2 toc-link" data-title="Table">Table</a>
+                  </li>
+                  <li>
+                    <a href="#references" class="toc-h2 toc-link" data-title="References">References</a>
+                  </li>
+                  <li>
+                    <a href="#not-part-of-markdown" class="toc-h2 toc-link" data-title="Not part of markdown">Not part of markdown</a>
                   </li>
               </ul>
           </li>
@@ -247,7 +285,7 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='my-learning'>My Learning</h1>
-<aside class="success"> Some say learning stops when you grow old. But, according to me Learning begins from the day we are born till the our last breath. I am making a note of whatever I had (/have been) learnt (/learning) from my undergraduate to Ph.D. (and till now!). Everyone you see in this world are here to teach you something new provided you are ready to listen and willing to learn.  </aside>
+<aside class="success"> Some say learning stops when you grow old. But, according to me Learning begins from the day we are born till the our last breath. I am making a note of whatever I had (/have been) learnt (/learning) from my undergraduate to Ph.D. (and till now!). Everyone you see in this world is here to teach you something new provided you are ready to "listen" and "willing" to learn.  </aside>
 
 <aside class="notice" > Even a 2 year old kid can teach you something new provided you are patient and willing to listen. </aside>
 
@@ -256,40 +294,299 @@
 <p>It include the following but not limited to</p>
 
 <ul>
-<li>Linux basic</li>
-<li>Linux advanced</li>
+<li><a href="#linux-basic">Linux basic</a></li>
+<li><a href="#linux-administration">Linux advanced</a></li>
+<li>//TODO</li>
 <li>Shell scripting</li>
-<li>C</li>
-<li>C++</li>
+<li>Markdown</li>
+<li>C/C++</li>
 <li>CUDA</li>
-<li>Git</li>
-<li>Github</li>
+<li>Git/GitHub</li>
 <li>Web hosting</li>
 </ul>
-<h1 id='linux-basic'>Linux Basic</h1><h2 id='shortcut-keys'>Shortcut keys</h2>
+<h1 id='linux-basic'>Linux Basic</h1><h2 id='a-few-shortcuts'>A few shortcuts</h2>
 <ul>
 <li><code>ctrl + alt + T</code> - Open terminal</li>
 <li><code>ctrl + alt + &lt;up/right/left&gt;</code> - Switch workspace</li>
-<li><code>ctrl + alt + shift + &lt;right/left&gt;</code> - Move current window right/left workspace</li>
+<li><code>ctrl + alt + shift + &lt;right/left&gt;</code> - Move current window to right/left workspace</li>
 <li><code>ctrl + alt + &lt;F1/F2/F3/F4/F5/F6&gt;</code> - Open TTY login (does not use GUI)</li>
 <li><code>ctrl + alt + &lt;F7&gt;</code> -  Leave TTY screen and switch to GUI</li>
+<li><code>&lt;up/down&gt;</code> - Move back/forth the previously typed terminal commands</li>
 </ul>
-<h2 id='basic-commands'>Basic commands</h2>
+<h2 id='basic-commands'>Basic commands</h2><pre class="highlight shell tab-shell"><code><span class="gp">$ </span><span class="nb">pwd</span>       <span class="c"># path of working directory</span>
+<span class="gp">$ </span>ls        <span class="c"># list the contents of current directory</span>
+<span class="gp">$ </span><span class="nb">cd </span>Music  <span class="c"># changes the current directory to `Music` directory</span>
+<span class="gp">$ </span><span class="nb">cd</span> ..     <span class="c"># change the directory to one level up except at '/'</span>
+<span class="gp">$ </span><span class="nb">cd</span> -      <span class="c"># jumps to previous `pwd` before a `cd`</span>
+<span class="gp">$ </span>ls -l     <span class="c"># long listing the file</span>
+<span class="gp">$ </span>ls -lrt   <span class="c"># list file based on the modified date. recent at the last.</span>
+<span class="gp">$ </span>man ls    <span class="c"># list manual pages for  `ls`</span>
+<span class="gp">$ </span>ls --version <span class="c"># shows the version of `ls`. Sometimes it is `&lt;cmd&gt; -v`</span>
+</code></pre>
 <ul>
-<li><code>man &lt;cmd&gt;</code> - list manual pages for any valid linux <code>cmd</code></li>
 <li><code>pwd</code>       - path of working directory</li>
+<li><code>ls</code>        - list the contents of current working directory i.e <code>pwd</code></li>
 <li><code>cd folder</code> - changes the current directory to <code>folder</code></li>
 <li><code>cd ..</code>     - change the directory to one level up except at &#39;/&#39;</li>
 <li><code>cd -</code>      - jumps to previous <code>pwd</code> before a <code>cd</code></li>
-<li><code>ls -l</code>     - long listing the file</li>
-<li><code>ls -lrt</code>   - list file based on the modified date. recent at the last.</li>
+<li><code>ls -l</code>     - long listing of file/folder</li>
+<li><code>ls -lrt</code>   - list file based on the modified date. recent at the last</li>
+<li><code>man &lt;cmd&gt;</code>       - list manual pages for any valid linux <code>cmd</code></li>
+<li><code>&lt;cmd&gt; --version</code> - shows the version of valid <code>cmd</code></li>
 </ul>
-<pre class="highlight shell tab-shell"><code><span class="gp">$ </span>ls            <span class="c"># list the contents of current directory</span>
-<span class="gp">$ </span>cat file.txt  <span class="c"># list the contents of file.txt if exist</span>
-</code></pre><h1 id='linux-administration'>Linux Administration</h1><h2 id='install'>Install</h2>
-<p>The easiest of all Linux distribution is Ubuntu. I have been using Linux
-as main stream from 2014. I have used Debian, Ubuntu, and few others.
-But, now Linux Mint Cinnamon is my favourite. I hate Unity-GUI in Ubuntu.</p>
+<h1 id='linux-administration'>Linux Administration</h1>
+<p>The easiest of all Linux distribution is Ubuntu.
+I have been using Linux along side from 2009,
+and from 2016 Linux is my main stream operating system.
+I have used Debian, Ubuntu, Fedora, OpenSUSE, and a few others.
+Thanks to my under-graduate projects and {TCE&#39;s FStival 2008]().
+But, now Linux Mint Cinnamon is my favourite (from 2017).
+I begin to dislike Unity-Gnome in Ubuntu, so moved to Mint.
+Am I ranting or self-trumpeting? Both. Okay, it is 2020. But still some
+commands are still in my muscle memory. I am just logging it here.</p>
+<h2 id='admin-commands'>Admin commands</h2>
+<ul>
+<li><code>echo $HOME</code> - Displays the home of user who run it</li>
+<li><p><code>ls -a</code> - Also list the hidden folders/files (it beging with a <code>.</code>) e.g <code>.bashrc</code> in $HOME</p></li>
+<li><p><code>df -h</code>   - List all mounted partition along with used/available/% size</p></li>
+<li><p><code>top</code>       - List all running process based on % of CPU usage. press <code>q</code> to close</p></li>
+<li><p><code>du -h .</code> - List the file/folder size of current directory</p></li>
+<li><p><code>lscpu</code> - List the processor details</p></li>
+<li><p><code>lsusb</code> - List of devices attached to the USB port</p></li>
+<li><p><code>cat /proc/meminfo</code>    - List the RAM/memory details</p></li>
+<li><p><code>dmesg | grep tty</code>      - Find the <code>tty/devName</code> just attached via USB</p></li>
+<li><p><code>less /var/log/auth.log</code>- All login/out/suspend session are recored</p></li>
+<li><p><code>/var/log/*</code>            - has all the logs file e.g. apt-get log is in `<code>/var/log/apt/history.log</code></p></li>
+<li><p><code>ps -ef | grep firefox</code>- List processes/id with the name <code>firefox</code></p></li>
+<li><p><code>kill &lt;pid&gt;</code>    - Kill the process with <pid> sending sigterminate</p></li>
+<li><p><code>kill -9 &lt;pid&gt;</code> - Kill the process with <pid> sending sigkill</p></li>
+<li><p><code>/home/&lt;user&gt;/.bashrc</code>  - User specific bashrc file</p></li>
+<li><p><code>source .bashrc</code>- Run and set bachrc file in current session</p></li>
+<li><p><code>/home/&lt;user&gt;/.bash_history</code> - List of cmd typed by the <code>user</code></p></li>
+<li><p><code>echo $PATH</code> - Displays the environment variable <code>PATH</code></p></li>
+<li><p><code>PATH=$PATH:/usr/local/cuda-10.0/bin</code> - Set path in shell</p></li>
+<li><p><code>export PATH</code> - will pass this env variable for subsequent commands <a href="https://github.com/edemaine/coauthor/issues/421#issuecomment-515698521">eric</a></p></li>
+<li><p><code>ssh  username@ip-address</code> # e.g <code>ssh rajesh@10.6.3.112</code></p></li>
+<li><p><code>scp localfile user@ip-address:/some/location/on/server</code></p></li>
+</ul>
+<h2 id='installation'>Installation</h2>
+<ul>
+<li>Most of new machine. You may have to disable fastboot/safeboot in BIOS</li>
+<li>Download you favourite linux as <code>iso</code> file</li>
+<li>Burn iso to formatted USB/DVD using
+<a href="https://rufus.ie/" title="USB Rufus">rufus</a>,
+<a href="https://unetbootin.github.io/" title="UNetbootin">UNetbootin</a> ,
+<a href="https://askubuntu.com/a/1153429/1021108" title="USB Creator">usb-creator</a> or
+<a href="https://www.howtogeek.com/414574/how-to-burn-an-iso-file-to-a-usb-drive-in-linux/" title="Startup Disk Creator">Startup Disk creator</a></li>
+<li>Reboot and press the key F12/F10 (differ based on manufacturer) to bootfrom USB/DVD</li>
+<li>Mostly positive answer for moast. At select drive location, use MANUALLY</li>
+<li>Give appropriate drives  &quot;/&quot;, /home, and swap (/boot, /tmp optinal)</li>
+<li>You may leave it with / alone also.</li>
+<li>Upon installation and reboot. Grub will appear.</li>
+</ul>
+<h1 id='markdown-syntax'>Markdown Syntax</h1><h2 id='heading'>Heading</h2><pre class="highlight plaintext"><code># Heading 1
+## Heading 2 ##
+and so on till H6.
+
+A short form for H1 and H2 is
+Heading 1
+=========
+Heading 2
+----------
+</code></pre><h2 id='quoting-text'>Quoting text</h2>
+<table><thead>
+<tr>
+<th>Syntax</th>
+<th>Output</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><img src="images/quotes0-48928371.png" alt="Quotes0" /></td>
+<td><img src="images/quotes1-9064222f.png" alt="Quotes1" /></td>
+</tr>
+</tbody></table>
+<h2 id='source-code'>Source code</h2><pre class="highlight plaintext"><code>This is inline `code` and
+e.g. Use `git log` to see the commits.
+</code></pre>
+<ul>
+<li>This is inline <code>code</code> and</li>
+<li>e.g Use <code>git log</code> to see the commits.</li>
+</ul>
+
+<hr>
+
+<blockquote>
+<p>This is called code block or fenced code. You may specify the language.</p>
+</blockquote>
+<pre class="highlight cpp tab-cpp"><code>
+  <span class="cp">#include &lt;iostream&gt;
+</span>  <span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello There!"</span><span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">EXIT_SUCCESS</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre>
+<aside class="notice"> Use the below syntax to acquire effect on the right! </aside>
+
+<p><img src="images/codeblock1-6d989fca.png" alt="cpp code block" /></p>
+
+<p>You may mention language from <a href="https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers">this list</a> to enable syntax hightlighting at <code>line 1</code>.</p>
+<h2 id='hyperlinks-attachments'>Hyperlinks/Attachments</h2><pre class="highlight plaintext"><code>This is [Google](www.google.com) as a link.
+</code></pre>
+<p>This is <a href="www.google.com">Google</a> as a link.</p>
+
+<hr>
+<pre class="highlight plaintext"><code>![Alt text rajzdocs logo](images/logo-6e5006f2.png)
+![Some logo](http://example.com/logo.png)
+</code></pre>
+<p><img src="images/logo-6e5006f2.png" alt="Alt text rajzdocs logo" /></p>
+<h2 id='text-formatting'>Text formatting</h2><pre class="highlight plaintext"><code>*This text will be italic* and _This will also be italic_
+
+**This text will be bold** and __This will also be bold__
+
+_We **can** combine both_
+
+~~This text will be stricked-out~~
+</code></pre>
+<p><em>This text will be italic</em> and <em>This will also be italic</em></p>
+
+<p><strong>This text will be bold</strong> and <strong>This will also be bold</strong></p>
+
+<p><em>We <strong>can</strong> combine both</em></p>
+
+<p><del>This text will be stricked-out</del></p>
+<h2 id='list'>List</h2><pre class="highlight plaintext"><code>* one // Unordered
+* two
+* three
+
+1. One // Ordered
+2. Two
+3. Three
+
+- This is also
+- Unordered
+- An another way
+</code></pre>
+<blockquote>
+<p>Multi-level or nesting</p>
+</blockquote>
+<pre class="highlight plaintext"><code>- Can be nested
+  * One.One
+  * One.Two
+- Can also be nested this way
+  1. Two.One
+  1. Two.Two. What?
+  1. You see this? auto-increment.
+- Three
+  - Thread.One
+</code></pre>
+<ul>
+<li>one // Unordered</li>
+<li>two</li>
+<li>three</li>
+</ul>
+
+<ol>
+<li>One // Ordered</li>
+<li>Two</li>
+<li>Three</li>
+</ol>
+
+<ul>
+<li>This is also</li>
+<li>Unordered</li>
+<li>An another way</li>
+</ul>
+
+<p><strong>Multi-level or nesting</strong></p>
+
+<ul>
+<li>Can be nested
+
+<ul>
+<li>One.One</li>
+<li>One.Two</li>
+</ul></li>
+<li>Can also be nested this way
+
+<ol>
+<li>Two.One</li>
+<li>Two.Two. What?</li>
+<li>You see this? auto-increment.</li>
+</ol></li>
+<li>Three
+
+<ul>
+<li>Thread.One</li>
+</ul></li>
+</ul>
+<h2 id='horizontal-rule'>Horizontal rule</h2><pre class="highlight plaintext"><code>If you need horizontal rule then, use three
+asterisks,
+
+***
+
+hyphens or underscores like the below.
+
+---
+
+Also, have a blank line before and after!
+
+___
+</code></pre>
+<p>If you need horizontal rule then, use three
+asterisks,</p>
+
+<hr>
+
+<p>hyphens or underscores like the below.</p>
+
+<hr>
+
+<p>Also, have a blank line before and after!</p>
+
+<hr>
+<h2 id='table'>Table</h2><pre class="highlight plaintext"><code>Header 1 | Header 2
+-------- | -----------
+cell 1x1 | cell 1x2
+cell 2x1 | cell 2x2
+
+</code></pre>
+<table><thead>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>cell 1x1</td>
+<td>cell 1x2</td>
+</tr>
+<tr>
+<td>cell 2x1</td>
+<td>cell 2x2</td>
+</tr>
+</tbody></table>
+
+<p>you may use handy table <a href="https://www.tablesgenerator.com/markdown_tables">generator website</a> to generate large tables.</p>
+<h2 id='references'>References</h2>
+<ul>
+<li>From <a href="https://daringfireball.net/projects/markdown/basics">the author of Markdown</a></li>
+<li>Github <a href="https://guides.github.com/features/mastering-markdown/">Markdown Guide</a></li>
+<li><a href="https://www.markdownguide.org/cheat-sheet/">Markdownguide</a> Cheat-sheet</li>
+<li><a href="https://www.markdownguide.org/basic-syntax/">Markdownguide</a> DOs and DONTs</li>
+</ul>
+<h2 id='not-part-of-markdown'>Not part of markdown</h2><pre class="highlight plaintext"><code>This search engine [1] is lot better than [2] and [3]
+
+[1] - www.google.com
+[2] - www.yahoo.com
+[3] - www.bing.com
+</code></pre>
+<p>This search engine [1] is lot better than [2] and [3]
+Here&#39;s a sentence with a footnote. [^4].</p>
+
+<p>[1] - www.google.com
+[2] - www.yahoo.com
+[3] - www.bing.com
+[^4]: This is the footnote.</p>
 
       </div>
       <div class="dark-box">

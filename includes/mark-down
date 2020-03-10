@@ -1,0 +1,203 @@
+<h1 id='markdown-syntax'>Markdown Syntax</h1><h2 id='heading'>Heading</h2><pre class="highlight plaintext"><code># Heading 1
+## Heading 2 ##
+and so on till H6.
+
+A short form for H1 and H2 is
+Heading 1
+=========
+Heading 2
+----------
+</code></pre><h2 id='quoting-text'>Quoting text</h2>
+<table><thead>
+<tr>
+<th>Syntax</th>
+<th>Output</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><img src="/images/quotes0-48928371.png" alt="Quotes0" /></td>
+<td><img src="/images/quotes1-9064222f.png" alt="Quotes1" /></td>
+</tr>
+</tbody></table>
+<h2 id='source-code'>Source code</h2><pre class="highlight plaintext"><code>This is inline `code` and
+e.g. Use `git log` to see the commits.
+</code></pre>
+<ul>
+<li>This is inline <code>code</code> and</li>
+<li>e.g Use <code>git log</code> to see the commits.</li>
+</ul>
+
+<hr>
+
+<blockquote>
+<p>This is called code block or fenced code. You may specify the language.</p>
+</blockquote>
+<pre class="highlight cpp tab-cpp"><code>
+  <span class="cp">#include &lt;iostream&gt;
+</span>  <span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span><span class="o">*</span> <span class="n">argv</span><span class="p">[]){</span>
+    <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello There!"</span><span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
+    <span class="k">return</span> <span class="n">EXIT_SUCCESS</span><span class="p">;</span>
+  <span class="p">}</span>
+</code></pre>
+<aside class="notice"> Use the below syntax to acquire effect on the right! </aside>
+
+<p><img src="/images/codeblock1-6d989fca.png" alt="cpp code block" /></p>
+
+<p>You may mention language from <a href="https://github.com/rouge-ruby/rouge/wiki/List-of-supported-languages-and-lexers">this list</a> to enable syntax hightlighting at <code>line 1</code>.</p>
+<h2 id='hyperlinks-attachments'>Hyperlinks/Attachments</h2><pre class="highlight plaintext"><code>This is [Google](www.google.com) as a link.
+</code></pre>
+<p>This is <a href="www.google.com">Google</a> as a link.</p>
+
+<hr>
+<pre class="highlight plaintext"><code>![Alt text rajzdocs logo](images/logo.png)
+![Some logo](http://example.com/logo.png)
+</code></pre>
+<p><img src="/images/logo-6e5006f2.png" alt="Alt text rajzdocs logo" /></p>
+<h2 id='text-formatting'>Text formatting</h2><pre class="highlight plaintext"><code>*This text will be italic* and _This will also be italic_
+
+**This text will be bold** and __This will also be bold__
+
+_We **can** combine both_
+
+~~This text will be stricked-out~~
+</code></pre>
+<p><em>This text will be italic</em> and <em>This will also be italic</em></p>
+
+<p><strong>This text will be bold</strong> and <strong>This will also be bold</strong></p>
+
+<p><em>We <strong>can</strong> combine both</em></p>
+
+<p><del>This text will be stricked-out</del></p>
+<h2 id='list'>List</h2><pre class="highlight plaintext"><code>* one // Unordered
+* two
+* three
+
+1. One // Ordered
+2. Two
+3. Three
+
+- This is also
+- Unordered
+- An another way
+</code></pre>
+<blockquote>
+<p>Multi-level or nesting</p>
+</blockquote>
+<pre class="highlight plaintext"><code>- Can be nested
+  * One.One
+  * One.Two
+- Can also be nested this way
+  1. Two.One
+  1. Two.Two. What?
+  1. You see this? auto-increment.
+- Three
+  - Thread.One
+</code></pre>
+<ul>
+<li>one // Unordered</li>
+<li>two</li>
+<li>three</li>
+</ul>
+
+<ol>
+<li>One // Ordered</li>
+<li>Two</li>
+<li>Three</li>
+</ol>
+
+<ul>
+<li>This is also</li>
+<li>Unordered</li>
+<li>An another way</li>
+</ul>
+
+<p><strong>Multi-level or nesting</strong></p>
+
+<ul>
+<li>Can be nested
+
+<ul>
+<li>One.One</li>
+<li>One.Two</li>
+</ul></li>
+<li>Can also be nested this way
+
+<ol>
+<li>Two.One</li>
+<li>Two.Two. What?</li>
+<li>You see this? auto-increment.</li>
+</ol></li>
+<li>Three
+
+<ul>
+<li>Thread.One</li>
+</ul></li>
+</ul>
+<h2 id='horizontal-rule'>Horizontal rule</h2><pre class="highlight plaintext"><code>If you need horizontal rule then, use three
+asterisks,
+
+***
+
+hyphens or underscores like the below.
+
+---
+
+Also, have a blank line before and after!
+
+___
+</code></pre>
+<p>If you need horizontal rule then, use three
+asterisks,</p>
+
+<hr>
+
+<p>hyphens or underscores like the below.</p>
+
+<hr>
+
+<p>Also, have a blank line before and after!</p>
+
+<hr>
+<h2 id='table'>Table</h2><pre class="highlight plaintext"><code>Header 1 | Header 2
+-------- | -----------
+cell 1x1 | cell 1x2
+cell 2x1 | cell 2x2
+
+</code></pre>
+<table><thead>
+<tr>
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>cell 1x1</td>
+<td>cell 1x2</td>
+</tr>
+<tr>
+<td>cell 2x1</td>
+<td>cell 2x2</td>
+</tr>
+</tbody></table>
+
+<p>you may use handy table <a href="https://www.tablesgenerator.com/markdown_tables">generator website</a> to generate large tables.</p>
+<h2 id='references'>References</h2>
+<ul>
+<li>From <a href="https://daringfireball.net/projects/markdown/basics">the author of Markdown</a></li>
+<li>Github <a href="https://guides.github.com/features/mastering-markdown/">Markdown Guide</a></li>
+<li><a href="https://www.markdownguide.org/cheat-sheet/">Markdownguide</a> Cheat-sheet</li>
+<li><a href="https://www.markdownguide.org/basic-syntax/">Markdownguide</a> DOs and DONTs</li>
+</ul>
+<h2 id='not-part-of-markdown'>Not part of markdown</h2><pre class="highlight plaintext"><code>This search engine [1] is lot better than [2] and [3]
+
+[1] - www.google.com
+[2] - www.yahoo.com
+[3] - www.bing.com
+</code></pre>
+<p>This search engine [1] is lot better than [2] and [3]
+Here&#39;s a sentence with a footnote. [^4].</p>
+
+<p>[1] - www.google.com
+[2] - www.yahoo.com
+[3] - www.bing.com
+[^4]: This is the footnote.</p>

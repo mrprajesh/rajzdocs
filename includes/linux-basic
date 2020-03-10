@@ -1,0 +1,30 @@
+<h1 id='linux-basic'>Linux Basic</h1><h2 id='a-few-shortcuts'>A few shortcuts</h2>
+<ul>
+<li><code>ctrl + alt + T</code> - Open terminal</li>
+<li><code>ctrl + alt + &lt;up/right/left&gt;</code> - Switch workspace</li>
+<li><code>ctrl + alt + shift + &lt;right/left&gt;</code> - Move current window to right/left workspace</li>
+<li><code>ctrl + alt + &lt;F1/F2/F3/F4/F5/F6&gt;</code> - Open TTY login (does not use GUI)</li>
+<li><code>ctrl + alt + &lt;F7&gt;</code> -  Leave TTY screen and switch to GUI</li>
+<li><code>&lt;up/down&gt;</code> - Move back/forth the previously typed terminal commands</li>
+</ul>
+<h2 id='basic-commands'>Basic commands</h2><pre class="highlight shell tab-shell"><code><span class="gp">$ </span><span class="nb">pwd</span>       <span class="c"># path of working directory</span>
+<span class="gp">$ </span>ls        <span class="c"># list the contents of current directory</span>
+<span class="gp">$ </span><span class="nb">cd </span>Music  <span class="c"># changes the current directory to `Music` directory</span>
+<span class="gp">$ </span><span class="nb">cd</span> ..     <span class="c"># change the directory to one level up except at '/'</span>
+<span class="gp">$ </span><span class="nb">cd</span> -      <span class="c"># jumps to previous `pwd` before a `cd`</span>
+<span class="gp">$ </span>ls -l     <span class="c"># long listing the file</span>
+<span class="gp">$ </span>ls -lrt   <span class="c"># list file based on the modified date. recent at the last.</span>
+<span class="gp">$ </span>man ls    <span class="c"># list manual pages for  `ls`</span>
+<span class="gp">$ </span>ls --version <span class="c"># shows the version of `ls`. Sometimes it is `&lt;cmd&gt; -v`</span>
+</code></pre>
+<ul>
+<li><code>pwd</code>       - path of working directory</li>
+<li><code>ls</code>        - list the contents of current working directory i.e <code>pwd</code></li>
+<li><code>cd folder</code> - changes the current directory to <code>folder</code></li>
+<li><code>cd ..</code>     - change the directory to one level up except at &#39;/&#39;</li>
+<li><code>cd -</code>      - jumps to previous <code>pwd</code> before a <code>cd</code></li>
+<li><code>ls -l</code>     - long listing of file/folder</li>
+<li><code>ls -lrt</code>   - list file based on the modified date. recent at the last</li>
+<li><code>man &lt;cmd&gt;</code>       - list manual pages for any valid linux <code>cmd</code></li>
+<li><code>&lt;cmd&gt; --version</code> - shows the version of valid <code>cmd</code></li>
+</ul>
