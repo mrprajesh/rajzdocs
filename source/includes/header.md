@@ -8,9 +8,9 @@ It include the following but not limited to
 
 - [Linux basic](#linux-basic)
 - [Linux advanced](#linux-administration)
+- [Markdown](#markdown-syntax)
 - //TODO
 - Shell scripting
-- Markdown
 - C/C++
 - CUDA
 - Git/GitHub

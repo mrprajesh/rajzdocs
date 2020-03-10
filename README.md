@@ -38,9 +38,9 @@ includes:
 - Run `bundle exec middleman server`
 - Edit/Add/Remove file from source and includes folders.
 - Visualize the changes on the browser [http://localhost:4567/](http://localhost:4567/)
-- Run `./deploy.sh` // which basically creates html files from md files
 - Git commit i.e `git commit -am <msg>`  with messages (`git add .` if required)
-- Git `push` to remote server
+- Git `push` to remote server (optional)
+- Run `./deploy.sh` // which basically creates html files from md files
 - Those html files are kept separate on `gh-pages` branch and pushes it.
 - This get automatically pubished to github pages
 - In our case it is [site/rajzdocs](https://mrprajesh.github.io/rajzdocs/)

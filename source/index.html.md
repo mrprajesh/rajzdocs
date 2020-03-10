@@ -14,7 +14,11 @@ includes:
 - linux-basic
 - linux-advanced
 - mark-down
-
+- c
+- cpp
+- git
+- github
+- footer
 
 search: true
 ---
