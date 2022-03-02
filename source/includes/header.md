@@ -8,6 +8,7 @@ It include the following but not limited to
 
 - [Linux basic](#linux-basic)
 - [Linux advanced](#linux-administration)
+- [vim](#vim)
 - [Markdown](#markdown-syntax)
 - //TODO
 - Shell scripting
