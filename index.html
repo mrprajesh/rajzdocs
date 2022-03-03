@@ -231,6 +231,29 @@
               </ul>
           </li>
           <li>
+            <a href="#vim" class="toc-h1 toc-link" data-title="vim">vim</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#switch-modes" class="toc-h2 toc-link" data-title="switch modes">switch modes</a>
+                  </li>
+                  <li>
+                    <a href="#arrows" class="toc-h2 toc-link" data-title="Arrows">Arrows</a>
+                  </li>
+                  <li>
+                    <a href="#insert" class="toc-h2 toc-link" data-title="insert">insert</a>
+                  </li>
+                  <li>
+                    <a href="#edit-in-cmd-mode" class="toc-h2 toc-link" data-title="Edit in cmd mode">Edit in cmd mode</a>
+                  </li>
+                  <li>
+                    <a href="#visual" class="toc-h2 toc-link" data-title="Visual">Visual</a>
+                  </li>
+                  <li>
+                    <a href="#navigation" class="toc-h2 toc-link" data-title="Navigation">Navigation</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#linux-administration" class="toc-h1 toc-link" data-title="Linux Administration">Linux Administration</a>
               <ul class="toc-list-h2">
                   <li>
@@ -336,6 +359,51 @@
 <li><code>man &lt;cmd&gt;</code>       - list manual pages for any valid linux <code>cmd</code></li>
 <li><code>&lt;cmd&gt; --version</code> - shows the version of valid <code>cmd</code></li>
 </ul>
+<h1 id='vim'>vim</h1>
+<p>Three modes
+- command
+- insert
+- visual</p>
+<h2 id='switch-modes'>switch modes</h2>
+<ul>
+<li>ESC : to cmd mode</li>
+<li>i,a : to insert mode</li>
+<li>C-v, V: to visial mode</li>
+</ul>
+<h2 id='arrows'>Arrows</h2>
+<ul>
+<li>Sometimes arrow keys may not work</li>
+<li>hjkl</li>
+<li>ldur=left-down-up-right</li>
+</ul>
+<h2 id='insert'>insert</h2>
+<ul>
+<li>i - insert before cursor</li>
+<li>a - insert after cursor</li>
+<li><p>A - insert at end of line</p></li>
+<li><p>wq = write and quit</p></li>
+<li><p>q = quit</p></li>
+<li><p>q! = quit without saving</p></li>
+</ul>
+<h2 id='edit-in-cmd-mode'>Edit in cmd mode</h2>
+<ul>
+<li>d - cut or del</li>
+<li>y - yank or copy</li>
+<li>x - del a char</li>
+<li>dd -del a line</li>
+<li><select> d - deletes select</li>
+<li>yy - copy line</li>
+<li>p - paste yanked line after cursor line</li>
+<li>u - undo</li>
+<li>C-r - redo</li>
+</ul>
+<h2 id='visual'>Visual</h2>
+<p>C-v - rectangle selection
+V - line select
+ggVG - select all</p>
+<h2 id='navigation'>Navigation</h2>
+<p>C-] - function decalartion
+C-o - prev cursor position</p>
 <h1 id='linux-administration'>Linux Administration</h1>
 <p>The easiest of all Linux distribution is Ubuntu.
 I have been using Linux along side from 2009,
